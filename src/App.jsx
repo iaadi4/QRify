@@ -18,9 +18,9 @@ function App() {
 
   return (
     <>
-      <div className="flex h-screen">
-        <div className="flex basis-3/5 flex-col bg-blue-300 justify-center items-center">
-          <div className="flex flex-col bg-white shadow-lg p-4 w-1/2 rounded-2xl">
+      <div className="flex h-screen flex-col md:flex-row">
+        <div className="flex md:basis-3/5 basis-5/12 md:flex-col bg-blue-300 justify-center items-center">
+          <div className="flex flex-col bg-white shadow-lg p-4 w-1/2 min-w-[300px] rounded-2xl">
             <h1 className="pb-3 text-lg text-gray-600">Enter text to convert into QR</h1>
             <input
               type="text"
@@ -33,7 +33,7 @@ function App() {
             </input>
           </div>
         </div>
-        <div className="flex basis-2/5 flex-col justify-center items-center shadow-lg">
+        <div className="flex basis-7/12 flex-col justify-center items-center shadow-lg">
           <div id="qrCodeDiv" className=" h-60 w-60 shadow-2xl p-5 rounded-xl">
           </div>
         </div>
